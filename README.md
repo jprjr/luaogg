@@ -2,6 +2,8 @@
 
 Lua bindings to [libogg](https://xiph.org/ogg/doc/libogg/reference.html)
 
+MIT licensed (see file `LICENSE`)
+
 * [Synopsis](#synopsis)
 * [Implementation Notes](#implementation-notes)
   * [Pages](#pages)
