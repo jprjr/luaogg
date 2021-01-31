@@ -193,7 +193,7 @@ Returns a new `ogg_sync_state` data structure for the various
 `ogg_sync_*` functions.
 
 Also has a metatable for object-oriented usage. For example,
-`ogg.ogg_sync_init(state)` could be called as `state:init(1234)`.
+`ogg.ogg_sync_init(state)` could be called as `state:init()`.
 
 
 ## ogg_stream_state
