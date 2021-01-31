@@ -4,6 +4,14 @@ Lua bindings to [libogg](https://xiph.org/ogg/doc/libogg/reference.html)
 
 MIT licensed (see file `LICENSE`)
 
+# Installation
+
+Available on [luarocks](https://luarocks.org/modules/jprjr/luaogg):
+
+```bash
+luarocks install luaogg
+```
+
 * [Synopsis](#synopsis)
 * [Implementation Notes](#implementation-notes)
   * [Pages](#pages)
