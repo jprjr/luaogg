@@ -12,6 +12,8 @@ Available on [luarocks](https://luarocks.org/modules/jprjr/luaogg):
 luarocks install luaogg
 ```
 
+# Table of Contents
+
 * [Synopsis](#synopsis)
 * [Implementation Notes](#implementation-notes)
   * [Pages](#pages)
