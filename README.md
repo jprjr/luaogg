@@ -14,6 +14,10 @@ luarocks install luaogg
 
 Available on [AUR](https://aur.archlinux.org/packages/lua-luaogg/)
 
+## Building from source
+
+You can build with luarocks or cmake.
+
 # Table of Contents
 
 * [Synopsis](#synopsis)
