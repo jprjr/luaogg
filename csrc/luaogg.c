@@ -1,5 +1,5 @@
 #define LUAOGG_VERSION_MAJOR 1
-#define LUAOGG_VERSION_MINOR 0
+#define LUAOGG_VERSION_MINOR 1
 #define LUAOGG_VERSION_PATCH 0
 #define STR(x) #x
 #define XSTR(x) STR(x)
