@@ -1,5 +1,5 @@
 #define LUAOGG_VERSION_MAJOR 1
-#define LUAOGG_VERSION_MINOR 1
+#define LUAOGG_VERSION_MINOR 2
 #define LUAOGG_VERSION_PATCH 0
 #define STR(x) #x
 #define XSTR(x) STR(x)
@@ -570,6 +570,7 @@ luaogg_ogg_sync_state(lua_State *L) {
     if(state == NULL) {
         return luaL_error(L,"out of memory");
     }
+    ogg_sync_init(state);
 
     luaL_setmetatable(L,luaogg_sync_state_mt);
 
@@ -581,6 +582,9 @@ luaogg_ogg_stream_state(lua_State *L) {
     ogg_stream_state *state = lua_newuserdata(L,sizeof(ogg_stream_state));
     if(state == NULL) {
         return luaL_error(L,"out of memory");
+    }
+    if(ogg_stream_reset(state) != 0) {
+        return luaL_error(L,"error in ogg_stream_reset");
     }
 
     luaL_setmetatable(L,luaogg_stream_state_mt);
