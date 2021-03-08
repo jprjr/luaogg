@@ -583,9 +583,6 @@ luaogg_ogg_stream_state(lua_State *L) {
     if(state == NULL) {
         return luaL_error(L,"out of memory");
     }
-    if(ogg_stream_reset(state) != 0) {
-        return luaL_error(L,"error in ogg_stream_reset");
-    }
 
     luaL_setmetatable(L,luaogg_stream_state_mt);
 
